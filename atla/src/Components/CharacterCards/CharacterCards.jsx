@@ -1,26 +1,8 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
-// async function getJson() {
-//     const response = await fetch('atla.json')
-//     const atlaData = await response.json();
-//     return atlaData;
-// }
 
-// export default function DisplayCharacters() {
-//     const atlaData = getJson();
-//     console.log(atlaData.name);
-//     return (
-//         <div className="card-container">
-//             <div className="rows">
-//                 {atlaData.map(character => character)}
-//             </div>
-//         </div>
-//     )
-// }
+export default function CharacterCards(){
 
-
-
-export default function DisplayCharacters(){
     const [apiData, setApiData] = useState([]);
     const axiosGetAllData = async() => {
         await axios.get('http://localhost:9000/api')
@@ -30,8 +12,6 @@ export default function DisplayCharacters(){
           setApiData(returnedApiData);
         })
       }
-
-
     
     useEffect(() => {
         axiosGetAllData();
@@ -39,10 +19,13 @@ export default function DisplayCharacters(){
 
       return (
         <div className="cards-container">
-            <ul className="rows">
+            <ul className="allCards">
                 {apiData.map(character => (
                     <li className="character-card">
                         <img src={character.photoUrl} alt={character.name} />
+                        <button className="btn">
+                          {character.name}
+                        </button>
                     </li>
                 ))}
             </ul>
@@ -50,13 +33,3 @@ export default function DisplayCharacters(){
       )
 
 }
-  
-
-//   const axiosPostData = (newObject) => {
-//     axios.post(`http://localhost:9000/addItem`, newObject)
-//     .then(response => {
-//       console.log(response);
-//     });
-//   };
-
-  

@@ -1,4 +1,4 @@
-import DisplayCharacters from "../Characters/Characters";
+import CharacterCards from "../CharacterCards/CharacterCards";
 
 function MainContent() {
     return (
@@ -9,7 +9,7 @@ function MainContent() {
         attacked. Only the Avatar, master of all elements
         could stop them. But when the world needed him most,
         he vanished.
-        <DisplayCharacters />
+        <CharacterCards />
       </main>
     );
   }
