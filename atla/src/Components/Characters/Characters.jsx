@@ -38,10 +38,12 @@ export default function DisplayCharacters(){
       }, []);
 
       return (
-        <div>
-            <ul>
+        <div className="cards-container">
+            <ul className="rows">
                 {apiData.map(character => (
-                    <img src={character.photoUrl} alt={character.name} />
+                    <li className="character-card">
+                        <img src={character.photoUrl} alt={character.name} />
+                    </li>
                 ))}
             </ul>
         </div>
