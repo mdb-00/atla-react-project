@@ -1,5 +1,5 @@
+import AddCharacter from "../AddCharacter/AddCharacter";
 import CharacterCards from "../CharacterCards/CharacterCards";
-import CharacterForm from "../NewCharacterInfo/NewCharacterInfo";
 
 function MainContent() {
     return (
@@ -11,7 +11,7 @@ function MainContent() {
         could stop them. But when the world needed him most,
         he vanished.
         <CharacterCards />
-        <CharacterForm />
+        <AddCharacter />
       </main>
     );
   }
