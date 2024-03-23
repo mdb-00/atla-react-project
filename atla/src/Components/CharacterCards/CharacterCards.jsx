@@ -1,5 +1,6 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
+import DeleteCharacter from "../DeleteCharacter/DeleteCharacter";
 
 export default function CharacterCards(){
 
@@ -26,6 +27,7 @@ export default function CharacterCards(){
                         <button className="btn">
                           {character.name}
                         </button>
+                        <DeleteCharacter character={character.id} />
                     </li>
                 ))}
             </ul>

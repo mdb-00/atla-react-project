@@ -8,6 +8,7 @@ body {
   background-image: url("../src/images/libraryfade.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,6 +19,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .header {
   font-family: "herculanum", sans-serif;
   margin-top: 5%;
