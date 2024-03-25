@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import MainContent from "./Components/MainContent/MainContent";
+<<<<<<< HEAD
 import NavBar from "./navBar/NavBar";
 import CharInfo from "./Components/charInfo/CharInfo";
 import AddCharacter from "./Components/AddCharacter/AddCharacter";
@@ -38,8 +39,21 @@ import CharacterCards from "./Components/CharacterCards/CharacterCards";
               <NavBar /> 
               {component}
               {/* <MainContent /> */}
+=======
+import Navbar from "./Components/nav/Nav";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+    function App() {
+      return (
+        <Router>
+          <div className="container">
+              <Header />
+              <Navbar />
+              <MainContent />
+>>>>>>> 9f2d159015c072a9fec91fd4bfc2a085bf9a191d
               <Footer />
           </div>
+        </Router>
       )
   }
   
