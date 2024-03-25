@@ -3,13 +3,41 @@ import './App.css';
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import MainContent from "./Components/MainContent/MainContent";
+import NavBar from "./navBar/NavBar";
+import CharInfo from "./Components/charInfo/CharInfo";
+import AddCharacter from "./Components/AddCharacter/AddCharacter";
+import DeleteCharacter from "./Components/DeleteCharacter/DeleteCharacter";
+import CharacterCards from "./Components/CharacterCards/CharacterCards";
 
     function App() {
-      return (
+        console.log(window.location)
+
+        let component
+        switch (window.location.pathname) {
+            case "/":
+                component = <MainContent />
+                break;
+            case "/CharacterCards/CharacterCards":
+                component = <CharacterCards />
+                break;
+            case "/AddCharacter/AddCharacter":
+                component = <AddCharacter />
+                break;
+            case "/DeleteCharacter/DeleteCharacter":
+                component = <DeleteCharacter />
+                break;
+            case "/charInfo/CharInfo":
+                component = <CharInfo />
+                break;
+        }
+
+        return (
         
           <div className="container">
               <Header />
-              <MainContent />
+              <NavBar /> 
+              {component}
+              {/* <MainContent /> */}
               <Footer />
           </div>
       )

@@ -10,8 +10,8 @@ function MainContent() {
         attacked. Only the Avatar, master of all elements
         could stop them. But when the world needed him most,
         he vanished.
-        <CharacterCards />
-        <AddCharacter />
+        {/* <CharacterCards />
+        <AddCharacter /> */}
       </main>
     );
   }

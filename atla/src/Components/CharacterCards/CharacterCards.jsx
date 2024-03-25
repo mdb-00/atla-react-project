@@ -4,7 +4,11 @@ import DeleteCharacter from "../DeleteCharacter/DeleteCharacter";
 
 export default function CharacterCards(){
 
-    const [apiData, setApiData] = useState([]);
+  const charInfoBtn = () => {
+    console.log("Button Clicked!")
+  }
+
+  const [apiData, setApiData] = useState([]);
     const axiosGetAllData = async() => {
         await axios.get('http://localhost:9000/api')
         .then(res => {
@@ -24,7 +28,7 @@ export default function CharacterCards(){
                 {apiData.map(character => (
                     <li className="character-card">
                         <img src={character.photoUrl} alt={character.name} />
-                        <button className="btn">
+                        <button className="btn" onClick={charInfoBtn}>
                           {character.name}
                         </button>
                         <DeleteCharacter character={character.id} />
