@@ -2,18 +2,17 @@ import axios from "axios";
 
 export default function DeleteCharacter({character}) {
 
-    function handleClick() {
+    function handleDelete() {
         const axiosDeleteData = async(id) => {
             await axios.delete(`http://localhost:9000/deleteItem/${id}`);
           }
 
-          console.log(character);
           axiosDeleteData(character);
     }
    
     return (
-        <button onClick={handleClick}>
-            {<img src="../../images/trash-can.png"/>}
+        <button className="deleteBtn" onClick={handleDelete}>
+            {<img src="../../images/trash-can.png" alt="delete"/>}
         </button>
     )
 }

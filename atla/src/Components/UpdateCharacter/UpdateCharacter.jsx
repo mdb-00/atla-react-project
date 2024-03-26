@@ -21,8 +21,6 @@ export default function UpdateCharacter({character}) {
           }
 
         axiosUpdateItem(updatedCharacterObj);
-        console.log(updatedCharacterObj);
-        
     }
 
     function handleClick() {
@@ -30,7 +28,7 @@ export default function UpdateCharacter({character}) {
     }
 
     let content = formActive === true ? 
-    <form onSubmit={handleSubmit}>
+    <form className="updateForm" onSubmit={handleSubmit}>
           <label>
               Name:
               <input defaultValue={character.name} type="text" name="name"/>
@@ -52,11 +50,11 @@ export default function UpdateCharacter({character}) {
       : null;
 
     return(
-        <>
-        <button onClick={handleClick}>{<img src="../../images/edit-marker.png"/>}</button>
-        <div className="updateForm">
+        <div className="updateContainer">
+        <button className="updateBtn" onClick={handleClick}>{<img src="../../images/edit-marker.png" alt="edit"/>}</button>
+        <div>
             {content}
         </div>
-        </> 
+        </div> 
     )
 }

@@ -59,7 +59,7 @@ code {
 
 .card-btns{
   width: 300px;
-  display: inline-flex;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -92,7 +92,13 @@ code {
   font-family: "herculanum", sans-serif;
 }
 
+.updateBtn img:hover {
+  background-color: rgb(99, 192, 255);
+}
 
+.deleteBtn img:hover {
+  background-color: rgb(255, 54, 54);
+}
 
 .character-card {
   width: 350px;
@@ -101,6 +107,7 @@ code {
   padding-top: 10px;
   padding-left: 10px;
   border-radius: 10px;
+  font-weight: bold;
 }
 
 .card-main {
@@ -152,6 +159,17 @@ code {
 .addForm input[type=text]:focus {
   background-color: lightblue;
 }
+
+.updateFormContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.updateForm {
+  width: 50%;
+  padding: 5px;
+}
+
 
 .Home{
   font-family: "herculanum", sans-serif;

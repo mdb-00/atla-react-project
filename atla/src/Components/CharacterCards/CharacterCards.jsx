@@ -26,9 +26,6 @@ export default function CharacterCards() {
                     <li className="character-card">
                       <div className="card-main">
                       <img className="card-imgs" src={character.photoUrl} alt={character.name} />
-                        {/* <button className="btn" onClick={ () => <CharInfo character={character}/>}>
-                          {character.name}
-                        </button> */}
                         <p className="character-name">{character.name}</p>
                       </div>
                         <p>Affiliation: {character.affiliation}</p>
@@ -40,7 +37,6 @@ export default function CharacterCards() {
                             <DeleteCharacter character={character.id} />
                           </div>
                         </div>
-                        
                     </li>
                 ))}
             </ul>
