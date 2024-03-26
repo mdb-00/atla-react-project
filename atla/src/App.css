@@ -4,21 +4,22 @@
 }
 
 body {
-  /* background-color: blanchedalmond; */
   background-image: url("../src/images/libraryfade.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .header {
+  background-image: url(images/Wan_Shi_Tong-nobackground.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
   font-family: "herculanum", sans-serif;
   margin-top: 5%;
   color: black;
@@ -31,23 +32,45 @@ code {
   width: 100%;
   display: block;
 }
-
-.container {
-  max-width: 80rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4.8rem;
+.banner {
+  width: 100%;
 }
 
-.mainContent {
-  align-items: center;
-  font-family: "herculanum", sans-serif;}
-
 .footer {
-  font-family: "herculanum", sans-serif;}
+  font-family: "herculanum", sans-serif;
+}
+
+.btn {
+  color: aqua;
+  margin-left: 4.5%;
+  background-color: rgb(156, 153, 153);
+  text-align: center;
+  margin-left: 120px;
+}
+
+/* .allCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  aspect-ratio: 1;
+  max-width: fit-content;
+} */
 
 .allCards {
-  list-style-type: none;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, minmax(1px, 100%));
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  max-width: max-content;
+}
+
+.cardImg {
+  max-height: 250px;
 }

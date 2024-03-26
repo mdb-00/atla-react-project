@@ -1,7 +1,7 @@
 function Footer() {
     return (
       <footer className="footer">
-        This is the footer
+        By the devoted nerds Michael Harris, Briana Griggs, and Kelvin Owens
       </footer>
     );
   }

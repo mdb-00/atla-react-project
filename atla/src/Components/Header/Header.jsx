@@ -4,8 +4,8 @@ function Header() {
   return (
     <div>
       <header className="header">
-        <img src="../../images/fontbolt.png"></img>
-        <p>AVATAR: The Last Airbender Project</p>
+        <img clasName="banner" src="../../images/fontbolt.png"></img>
+        <p>What will you contribute?</p>
       </header>
     </div>
   );
