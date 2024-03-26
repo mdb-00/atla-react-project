@@ -36,11 +36,13 @@ export default function CharacterCards() {
             <ul className="allCards">
                 {apiData.map(character => (
                     <li className="character-card">
-                        <img src={character.photoUrl} alt={character.name} />
+                      <div className="card-main">
+                      <img className="card-imgs" src={character.photoUrl} alt={character.name} />
                         {/* <button className="btn" onClick={ () => <CharInfo character={character}/>}>
                           {character.name}
                         </button> */}
                         <p className="character-name">{character.name}</p>
+                      </div>
                         <p>Affiliation: {character.affiliation}</p>
                         <p>Allies: {character.allies}</p>
                         <p>Enemies: {character.enemies}</p>
