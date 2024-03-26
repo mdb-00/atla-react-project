@@ -4,9 +4,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import MainContent from "./Components/Home/Home";
 import NavBar from "./navBar/NavBar";
-import CharInfo from "./Components/charInfo/CharInfo";
 import AddCharacter from "./Components/AddCharacter/AddCharacter";
-import DeleteCharacter from "./Components/DeleteCharacter/DeleteCharacter";
 import CharacterCards from "./Components/CharacterCards/CharacterCards";
 
     function App() {
@@ -22,12 +20,6 @@ import CharacterCards from "./Components/CharacterCards/CharacterCards";
                 break;
             case "/AddCharacter/AddCharacter":
                 component = <AddCharacter />
-                break;
-            case "/DeleteCharacter/DeleteCharacter":
-                component = <DeleteCharacter />
-                break;
-            case "/charInfo/CharInfo":
-                component = <CharInfo />
                 break;
         }
 
