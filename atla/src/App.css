@@ -108,9 +108,35 @@ code {
   text-shadow: 2px 2px 2px lightgray;
 }
 
-/* .updateForm {
-  margin-left: 60px;
-} */
+.addForm {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-family: "herculanum", sans-serif;
+}
+
+.addForm label {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.addForm input[type=text] {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(000, 000, 000, 0);
+  font-family: "herculanum", sans-serif;
+  height: 20px;
+}
+
+.addForm input[type=text]:focus {
+  background-color: lightblue;
+}
 
 .Home{
   font-family: "herculanum", sans-serif;

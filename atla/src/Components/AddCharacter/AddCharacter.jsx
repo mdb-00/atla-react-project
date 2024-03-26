@@ -24,13 +24,13 @@ export default function AddCharacter() {
   }
 
   return (
-      <form onSubmit={handleSubmit}>
+      <form className="addForm" onSubmit={handleSubmit}>
           <label>
               Name:
               <input type="text" name="name"/>
           </label>
           <label>
-              Affiliation:
+              Affiliation:  
               <input type="text" name="affiliation"/>
           </label>
           <label>
