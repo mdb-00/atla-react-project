@@ -1,10 +1,11 @@
 [
     {
      "id": 1,
+     "affiliation": "none",
      "allies": [
       "Aang"
      ],
-     "enemies": [],
+     "enemies": ["none"],
      "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/f/f8/Chong.png/revision/latest?cb=20140127210142",
      "name": "Chong"
     },
@@ -62,7 +63,7 @@
       "Cabbage Corp"
      ],
      "enemies": [
-      "The "
+      "The passport attendant, Team Avatar, people and animals who destroy his cabbages"
      ],
      "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/2/2f/Cabbage_merchant.png/revision/latest?cb=20140112200908",
      "name": "Cabbage merchant",
@@ -94,6 +95,7 @@
     },
     {
      "id": 9,
+     "affiliation": "none",
      "allies": [
       "Avatar"
      ],
@@ -129,10 +131,11 @@
     },
     {
      "id": 12,
+     "affiliation": "none",
      "allies": [
       "Earth Kingdom"
      ],
-     "enemies": [],
+     "enemies": ["none"],
      "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/c/ce/Corncob_guy.png/revision/latest?cb=20140422090141",
      "name": "Corncob guy"
     },
@@ -141,7 +144,7 @@
      "allies": [
       "Earth Queen"
      ],
-     "enemies": [],
+     "enemies": ["none"],
      "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/3/32/Gun.png/revision/latest?cb=20140730160152",
      "name": "Gun",
      "affiliation": "Earth Kingdom government"
