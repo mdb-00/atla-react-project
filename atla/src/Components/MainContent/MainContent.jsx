@@ -1,5 +1,5 @@
-import AddCharacter from "../AddCharacter/AddCharacter";
-import CharacterCards from "../CharacterCards/CharacterCards";
+// import AddCharacter from "../AddCharacter/AddCharacter";
+// import CharacterCards from "../CharacterCards/CharacterCards";
 
 function MainContent() {
     return (
