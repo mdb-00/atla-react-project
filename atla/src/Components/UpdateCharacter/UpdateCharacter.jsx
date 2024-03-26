@@ -19,7 +19,8 @@ export default function UpdateCharacter({character}) {
         const axiosUpdateItem = async(updateObject) => {
             await axios.put(`http://localhost:9000/updateOne`, updateObject)
           }
-
+        
+        alert(`${updatedCharacterObj.name} updated! Refresh page!`)
         axiosUpdateItem(updatedCharacterObj);
     }
 

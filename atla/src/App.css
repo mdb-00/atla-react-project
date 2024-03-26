@@ -141,12 +141,12 @@ code {
   font-family: "herculanum", sans-serif;
 }
 
-.addForm label {
+form label {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.addForm input[type=text] {
+form input[type=text] {
   padding-left: 10px;
   padding-right: 10px;
   border: none;
@@ -176,14 +176,6 @@ code {
   text-align: center;
   font-size: 2rem;
 }
-/* .allCards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  aspect-ratio: 1;
-  max-width: fit-content;
-} */
 
 .allCards {
   display: grid;

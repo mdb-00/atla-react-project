@@ -20,6 +20,7 @@ export default function AddCharacter() {
         });
       };
 
+      alert(`${newCharacterObject.name} added!`)
       axiosPostData(newCharacterObject);     
       
   }

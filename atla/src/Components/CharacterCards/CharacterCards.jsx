@@ -34,7 +34,7 @@ export default function CharacterCards() {
                         <div className="btn-container">
                           <div className="card-btns">
                             <UpdateCharacter character={character}/>
-                            <DeleteCharacter character={character.id} />
+                            <DeleteCharacter character={character} />
                           </div>
                         </div>
                     </li>
