@@ -1,6 +1,7 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
 import DeleteCharacter from "../DeleteCharacter/DeleteCharacter";
+import UpdateCharacter from "../UpdateCharacter/UpdateCharacter";
 
 export default function CharacterCards() {
   // const [apiData, setApiData] = useState([]);
@@ -12,9 +13,9 @@ export default function CharacterCards() {
   //   });
   // };
 
-  const charInfoBtn = () => {
-    console.log("Button Clicked!")
-  }
+  // const charInfoBtn = () => {
+  //   console.log("Button Clicked!")
+  // }
 
   const [apiData, setApiData] = useState([]);
     const axiosGetAllData = async() => {
@@ -36,10 +37,20 @@ export default function CharacterCards() {
                 {apiData.map(character => (
                     <li className="character-card">
                         <img src={character.photoUrl} alt={character.name} />
-                        <button className="btn" onClick={charInfoBtn}>
+                        {/* <button className="btn" onClick={ () => <CharInfo character={character}/>}>
                           {character.name}
-                        </button>
-                        <DeleteCharacter character={character.id} />
+                        </button> */}
+                        <p className="character-name">{character.name}</p>
+                        <p>Affiliation: {character.affiliation}</p>
+                        <p>Allies: {character.allies}</p>
+                        <p>Enemies: {character.enemies}</p>
+                        <div className="btn-container">
+                          <div className="card-btns">
+                            <UpdateCharacter character={character}/>
+                            <DeleteCharacter character={character.id} />
+                          </div>
+                        </div>
+                        
                     </li>
                 ))}
             </ul>

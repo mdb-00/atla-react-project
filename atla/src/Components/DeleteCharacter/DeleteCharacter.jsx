@@ -13,7 +13,7 @@ export default function DeleteCharacter({character}) {
    
     return (
         <button onClick={handleClick}>
-            Trash
+            {<img src="../../images/trash-can.png"/>}
         </button>
     )
 }
