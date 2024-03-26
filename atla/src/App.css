@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,6 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .header {
   background-image: url(images/Wan_Shi_Tong-nobackground.png);
   background-position: 50%;
@@ -37,7 +39,14 @@ code {
 }
 
 .footer {
+  text-align: center;
   font-family: "herculanum", sans-serif;
+}
+
+.HomeImg{
+  margin-top: 2%;
+  height: 50%;
+  width: 50%;
 }
 
 .btn {
@@ -48,6 +57,11 @@ code {
   margin-left: 120px;
 }
 
+.Home{
+  font-family: "herculanum", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
 /* .allCards {
   display: flex;
   flex-direction: row;
@@ -73,4 +87,36 @@ code {
 
 .cardImg {
   max-height: 250px;
+}
+
+.nav {
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+
+.site-title {
+  background-color: #333;
 }

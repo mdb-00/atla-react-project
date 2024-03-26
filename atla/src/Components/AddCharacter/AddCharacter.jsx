@@ -4,6 +4,7 @@ export default function AddCharacter() {
 
   function handleSubmit(event) {
       event.preventDefault();
+      
       const newCharacterObject = {
           "allies": [event.target.elements.allies.value],
           "enemies" :[event.target.elements.enemies.value],
@@ -18,8 +19,7 @@ export default function AddCharacter() {
         });
       };
 
-      axiosPostData(newCharacterObject);
-          
+      axiosPostData(newCharacterObject);     
       
   }
 
