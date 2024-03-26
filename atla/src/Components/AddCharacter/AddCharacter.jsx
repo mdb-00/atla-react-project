@@ -8,6 +8,7 @@ export default function AddCharacter() {
       const newCharacterObject = {
           "allies": [event.target.elements.allies.value],
           "enemies" :[event.target.elements.enemies.value],
+          "photoUrl": "https://i1.sndcdn.com/avatars-PkAmzSOLCdxklQgS-AokumA-t500x500.jpg",
           "name": event.target.elements.name.value,
           "affiliation": event.target.elements.affiliation.value,
       }
