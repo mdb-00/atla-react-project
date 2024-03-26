@@ -8,13 +8,9 @@ function NavBar() {
             <li><a href="/AddCharacter/AddCharacter">Add Character</a></li>
         </ul>
     </nav>
-<<<<<<< HEAD
 
 }
   
 
  
-=======
-}
->>>>>>> 53d2c5f75a200f94f6817632b52a1ae466b5505a
 export default NavBar;
