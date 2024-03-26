@@ -49,7 +49,7 @@ export default function UpdateCharacter({character}) {
 
     return(
         <>
-        <button onClick={() => setFormActive(true)}>Update</button>
+        <button onClick={() => setFormActive(true)}>{<img src="../../images/edit-marker.png"/>}</button>
         <div>
             {content}
         </div>

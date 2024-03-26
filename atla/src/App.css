@@ -53,3 +53,12 @@ code {
 .allCards {
   list-style-type: none;
 }
+
+.btn-container {
+  display: flex;
+}
+
+.card-btns img {
+  width: 1.5em;
+  height: 1.5em;
+}
