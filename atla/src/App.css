@@ -43,7 +43,6 @@ code {
   font-family: "herculanum", sans-serif;
   font-size: 25px;
   font-weight: bold;
-  
   text-shadow: 1px 1px 1px red;
 }
 
@@ -105,7 +104,7 @@ code {
 .character-name {
   font-size: 30px;
   font-weight: bold;
-  text-shadow: 2px 2px 2px gray;
+  text-shadow: 2px 2px 2px lightgray;
 }
 
 .Home{
