@@ -23,12 +23,6 @@ import CharacterCards from "./Components/CharacterCards/CharacterCards";
             case "/AddCharacter/AddCharacter":
                 component = <AddCharacter />
                 break;
-            case "/DeleteCharacter/DeleteCharacter":
-                component = <DeleteCharacter />
-                break;
-            case "/charInfo/CharInfo":
-                component = <CharInfo />
-                break;
         }
 
         return (
