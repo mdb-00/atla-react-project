@@ -42,7 +42,7 @@ export default function AddCharacter() {
               Enemies:
               <input type="text" name="enemies"/>
           </label>
-          <input type="submit" value="Submit"/>
+          <input className="submit-btns" type="submit" value="Submit"/>
       </form>
   )
 }   

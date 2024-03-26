@@ -25,6 +25,10 @@ export default function UpdateCharacter({character}) {
         
     }
 
+    function handleClick() {
+        formActive === true ? setFormActive(false) : setFormActive(true);
+    }
+
     let content = formActive === true ? 
     <form onSubmit={handleSubmit}>
           <label>
@@ -43,13 +47,13 @@ export default function UpdateCharacter({character}) {
               Enemies:
               <input defaultValue={character.enemies === undefined || character.enemies.length === 0 ? 'N/A' : character.enemies} type="text" name="enemies"/>
           </label>
-          <input type="submit" value="Submit"/>
+          <input className="submit-btns" type="submit" value="Submit"/>
       </form>
       : null;
 
     return(
         <>
-        <button onClick={() => setFormActive(true)}>{<img src="../../images/edit-marker.png"/>}</button>
+        <button onClick={handleClick}>{<img src="../../images/edit-marker.png"/>}</button>
         <div className="updateForm">
             {content}
         </div>

@@ -4,18 +4,6 @@ import DeleteCharacter from "../DeleteCharacter/DeleteCharacter";
 import UpdateCharacter from "../UpdateCharacter/UpdateCharacter";
 
 export default function CharacterCards() {
-  // const [apiData, setApiData] = useState([]);
-  // const axiosGetAllData = async () => {
-  //   await axios.get("http://localhost:9000/api").then((res) => {
-  //     const returnedApiData = res.data;
-  //     console.log(returnedApiData);
-  //     setApiData(returnedApiData);
-  //   });
-  // };
-
-  // const charInfoBtn = () => {
-  //   console.log("Button Clicked!")
-  // }
 
   const [apiData, setApiData] = useState([]);
     const axiosGetAllData = async() => {
